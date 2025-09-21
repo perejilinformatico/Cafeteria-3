@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+ 	<meta charset="utf-8">
+    <title>Cafeteria de maxi y caro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style.css') }}">
+ </head>
+ <body>
+ 	<header>
+ 		<div id="titulo">
+			<h1>
+			Cafeteria de maxi y caro
+		    </h1><br>
+		</div>
+		 <div id="Opciones"></div>
+          <a href="#pedido">HacerTuPedido</a>
+          <a href="#Informacion">Informacion</a>
+		  <a href="#Cafes">Cafes</a>
+		  <a href="#Menu">MenuPrincipal</a>
+		 </div>
+ 	</header>
+ 	<main>
+       <article id="Menu_principal">
+       	<h1 id="Menu">¡Bienvenido!</h1>
+       	<h2 id="Info_p">Esta es la pagina principal de la cafeteria<br></h2>
+		<img src="static/imgs/nuevo-buenos-dias-4.gif" id="Logo">
+       </article>
+       <hr>
+       	<article>
+       	 <div id="Informacion">
+            <img src="static/imgs/imagen.png">
+            <h3>Ellos son Maxi y<br>Caro los creadores de la cafeteria<br></h3>
+       	 </div>
+       </article>
+      <hr>
+       <article>
+       	 <div id="Cafes">
+       	 	<h1>Cafes</h1>
+       	 	<div id="Lista_De_cafes">
+       	 		<h4>Cafe Normal</h4>
+				<h4>Cafe Cortado</h4>
+       	 		<h4>Sutil Equilibrado</h4>
+       	 		<h4>Cortado Expreso</h4>
+       	 		<h4>Capuchino</h4>
+       	 		<h4>Capuchino Con Nutella</h4>
+       	 	</div>
+       	 </div>
+       </article>
+       <hr>
+       <article>
+		<div class="Pedido">
+       	    <h1 id="pedido">Hacer Tu Pedido</h1>
+			<p>Escriba su nombre aqui</p>
+       	    <input type="text" id="cafeInput"><br>
+            <h1 id="Mensaje1"></h1>
+		    <h2 id="Mensaje2"></h2>
+			<div id="Seleccion">
+       	    <h2>Elija El Cafe Que Quiera</h2>
+			 <div class="Botones">
+			   <input type="button" value="Cafe Normal" class="boton" onclick="enviarCafe('Cafe Normal')"><br>
+       	       <input type="button" value="Cafe Cortado" class="boton" onclick="enviarCafe('Cafe Cortado')"><br>
+       	       <input type="button" value="Sutil Equilibrado" class="boton" onclick="enviarCafe('Sutil Equilibrado')"><br>
+       	       <input type="button" value="Cortado Expreso" class="boton" onclick="enviarCafe('Cortado Expreso')"><br>
+       	       <input type="button" value="Capuchino" class="boton" onclick="enviarCafe('Capuchino')"><br>
+       	      <input type="button" value="Capuchino Con Nutella" class="boton" onclick="enviarCafe('Capuchino Con Nutella')"><br>
+			 </div>
+			</div>
+         </div>      
+	   </article>
+ 	</main>
+ 	  <footer>
+ 		  <h1>Hecho por santi :D</h1>
+		  <p>@Copyright 2025</p>
+ 	  </footer>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
